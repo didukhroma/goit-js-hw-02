@@ -1,12 +1,15 @@
-// Напиши скрипт подсчета стоимости гравировки украшений.
-// Для этого создай функцию calculateEngravingPrice(message, pricePerWord) принимающую строку(в строке будут только слова и пробелы)
-// и цену гравировки одного слова, и возвращающую цену гравировки всех слов в строке.
-
-const calculateEngravingPrice = function (message, pricePerWord) {
+//----------------------------------------------------------------------------------
+// 1-var
+// const calculateEngravingPrice = function (message, pricePerWord) {
+//   const priceAllWord = message.split(' ').length * pricePerWord;
+//   return priceAllWord;
+// };
+//------------------------------------------------------------------------------------
+//2-var
+const calculateEngravingPrice = (message, pricePerWord) => {
   const priceAllWord = message.split(' ').length * pricePerWord;
   return priceAllWord;
 };
-
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.
  */
