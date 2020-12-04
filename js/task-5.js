@@ -1,17 +1,17 @@
-
-
 const checkForSpam = function (message) {
   const normalizedMessage = message.toLowerCase();
-  //1-var
-  const result = Boolean(
-    normalizedMessage.includes('spam') || normalizedMessage.includes('sale'),
-  );
-  // 2-var
+  const result =
+    normalizedMessage.includes('spam') || normalizedMessage.includes('sale');
+  //2-var
+  // const result = Boolean(
+  //   normalizedMessage.includes('spam') || normalizedMessage.includes('sale'),
+  // );
+  //3-var
   //  const result =
   // normalizedMessage.includes('spam') || normalizedMessage.includes('sale')
   //   ? true
   //   : false;
-  //3-var
+  //4-var
   //   let result = false;
   //   if (normalizedMessage.includes('spam') || normalizedMessage.includes('sale')) {
   //     result = true;
