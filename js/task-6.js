@@ -5,7 +5,12 @@ let total = 0;
 // 1-var
 while (true) {
   input = prompt('Введите число!');
+  if (input === '') {
+    alert('Введите не пуcтое значение');
+    continue;
+  }
   const inputNumber = Number(input);
+  console.log(inputNumber);
   const inputNotANumber = Number.isNaN(inputNumber);
 
   if (input === null) {
